@@ -119,6 +119,7 @@ body {
   line-height: 1.8;
 }
 
+#footer {background-image: linear-gradient(to right, #4b4c78  0%, #a7c1c1  51%, #195225   100%)}
 #footer {
 	position: fixed;
 	bottom: 0;
@@ -127,6 +128,7 @@ body {
 	background: 	#ffd700;
 	border-bottom: 8px solid #0d0312;
 	padding-top: 10px;
+
 }
 #footer .fixed-menu {
 	display: flex;
@@ -138,17 +140,35 @@ body {
 	color: rgb(0, 0, 0);
 	flex-grow: 1;
 	width: 15%;
+  
 }
 #footer .btn-footer amp-img {
 	width: 24px;
 	margin: 0px auto -2px;
+  color: white;
+  animation: blinking 2s infinite;
+  
 }
+@keyframes blinking {
+0% {
+box-shadow: 0 0 10px 2px #000000;
+}
+50% {
+box-shadow: 0 0 10px 2px #e5bf9e;
+}
+100% {
+box-shadow: 0 0 10px 2px #d75c1e;
+}
+}
+
 #footer .btn-register amp-img {
 	width: 69px;
 	top: 6px;
 	border-radius: 15px;
 	overflow: hidden;
 	left: 7px;
+  animation: blinking 1s infinite;
+
 }
 #footer .btn-register {
 	width: 83px;
@@ -163,6 +183,8 @@ body {
 	border-radius: 250px;
 	font-size: 11px;
 	border: 7px solid #253823;
+  animation: blinking 1s infinite;
+
 }
 
 .navigation {
