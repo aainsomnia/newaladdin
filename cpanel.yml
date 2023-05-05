@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/leftvert/public_html/
+    - export DEPLOYPATH=/home/imaw7722/public_html/
     - /bin/cp -R asset $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
